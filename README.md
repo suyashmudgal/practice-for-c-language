@@ -122,4 +122,111 @@ int main(){
     return 0;    
 }
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* Write a C program to compute the sum of consecutive odd numbers from a given pair of integers.
+Test Data :*/
+
+#include <stdio.h>
+int main(){
+
+    int a,b;
+    printf("enter the first and last integer :- ");
+    scanf("%d%d",&a,&b);
+    int sum=0;
+    for(int i=a;i<=b;i++){
+        if(i%2!=0){
+            sum+=i;
+        }
+    }
+    printf("%d",sum);
+    return 0;
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* Write a C program to check if two numbers in a pair are in ascending order or descending order.
+Test Data :*/
+
+#include <stdio.h>
+
+int main(){
+
+    int num1, num2;
+    printf("enter the value of num1 :-");
+    scanf("%d",&num1);
+    printf("enter the value of num2 :-");
+    scanf("%d",&num1);
+
+    if(num1>num2){
+        printf("num1 is greater than num2\n");
+        printf("assending order ");
+    }
+    else{
+        printf("num1 is less than num2\n");
+        printf("descending order");
+    }
+    return 0;
+
+
+}
+
+#include<stdio.h>
+int main(){
+
+    int arr[5];
+    printf("Enter value to be stored in array> ");
+    scanf("%d", &arr[0]);
+
+    if(arr[0] > arr[1] && arr[1] > arr[2] && arr[2] > arr[3] && arr[3] > arr[4]){
+        printf("descending  order");
+    }
+    else{
+        printf("ascending order");
+    }
+    return 0;
+
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+two way are there to solve it
+
+/* Write a C program to read a password until it is valid. For wrong password print "Incorrect password" and for correct password print, "Correct password" and quit the program. The correct password is 1234.
+Test Data :*/
+#include <stdio.h>
+int main(){
+
+    int a = 1234;
+    int b;
+    while(1){
+        scanf("%d",&b);
+        if(b == a){
+            printf("Correct password");
+            break;
+        }
+        else
+        printf("Incorrect password");
+}
+
+#include<stdio.h>
+int main(){
+
+    int a = 1234;
+    int b;
+
+    printf("enter the value of b ::-");
+    scanf("%d",&b);
+    if( a == b){
+        
+        printf("correct password");
+
+    }
+    else{
+        printf("incorrect password");
+    }
+    return 0;
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
